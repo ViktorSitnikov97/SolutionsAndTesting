@@ -30,7 +30,6 @@ public class AppTest {
         Assertions.assertTrue(actual[0].length == image[0].length * 2);
 
         org.assertj.core.api.Assertions.assertThat(actual)
-                .isNotEmpty()
                 .contains(new String[]{"*", "*", "*", "*", "*", "*", "*", "*"}, Index.atIndex(0))
                 .contains(new String[]{"*", "*", " ", " ", " ", " ", "*", "*"}, Index.atIndex(5));
 
